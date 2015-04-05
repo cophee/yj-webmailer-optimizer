@@ -1,0 +1,17 @@
+{
+    "name": "yj-webmailer-optimizer",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Yahoo!JAPANのWebメールを最適化するChromeExtension",
+    "content_scripts": [{
+        "js": [
+            "js/jquery-2.1.1.min.js",
+            "js/ad-remover.js"
+        ],
+        "matches": [
+            "https://*.mail.yahoo.co.jp/neo/launch?*"
+        ],
+        "run_at": "document_end"
+    }],
+    "web_accessible_resources": [ ]
+}
